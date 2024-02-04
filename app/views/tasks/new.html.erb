@@ -1,0 +1,15 @@
+<%= form_with(model: @task, url: tasks_path, method: :post) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :details %>
+    <%= form.text_area :details %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Create Task" %>
+  </div>
+<% end %>
